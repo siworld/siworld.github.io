@@ -3,6 +3,31 @@
   
     
     <entry>
+      <title><![CDATA[使用Jekyll/Hexo/Pelican+Coding.net和Github搭建自己的静态个人网站]]></title>
+      <url>/2017/12/17/%E4%BD%BF%E7%94%A8Jekyll-Hexo-Pelican-Coding-net%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E9%9D%99%E6%80%81%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/</url>
+      <content type="html"><![CDATA[<p>###故事背景：<br>作为一个高逼格的码农（学者）， 怎能没有一个绚丽的个人网站？<br>当然简书已经充分满足了我写作的环境，只不过这也是我一直以来的想法。<br>要想当年， 用ik8和9k的免费空间搭了一个其丑无比但是功能还算健全的个人网站。但是囿于年久失修，免费空间全军覆没， 个人网站也早就木有了。 这回借着改革的春风和Github的Page服务（其实已经有了好久了，但是我一直木有时间填坑），寻思着抽这段时间的空，把这个坑填上。</p>
+<p>###正文<br>其实框架上的想法很早就有了就是利用Github的Page服务（码市也有类似服务，回头搞）， 利用静态框架进行搭建。 域名很早以前就已经申请了，yansi.me， 还是比较满意的。 从实名认证到备案（还好以前有过备案记录）， 总之还是依旧繁琐， 不过好在搞定了。 之后就是做解析，<br> 各种A记录和CNAME， 搞定之后就上网搜文章。像我这样，肯定是首先做个横评了。 </p>
+<p>Jekyll是基于Ruby的（一看是基于Ruby的，我直接放弃了（不是说Ruby不好哈， 是哥我要求高）），Hexo基于Node.js，之后还听说了一个叫Pelican的，是基于Python的（有空再搞）。<br>三者都是用于搭建静态页面网站的框架，选自己喜欢的就好。<br>我是从Hexo试起的，网上已经有很多文章了， 先做一下汇总， 具体链接在文章末尾（我在想，要不要把链接做得美观点， 比如藏在文字背后， 听大家的意见）。</p>
+<p>技术上我补充几点：</p>
+<ol>
+<li><p>如果4000端口被占用， 可以用该命令切换到5000：</p>
+<figure class="highlight plain"><figcaption><span>hexo server -p 5000```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2. 如果使用Yilia主题，还需要在博客根目录运行：```npm i hexo-generator-json-content --save</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>由于不同系统换行符的问题， 如果报关于LF的错误，可以运行以下语句：<br><code>git config --global core.autocrlf false</code></p>
+</li>
+</ol>
+<p>微信打开的话需要点一下继续访问就可以了。 留言功能还没加， 欢迎。。。额。。。在公众号后台给我提出宝贵意见。</p>
+<p>各种教程汇总：<br>(<a href="http://blog.csdn.net/qq_31655965/article/details/53172143" target="_blank" rel="noopener">http://blog.csdn.net/qq_31655965/article/details/53172143</a>)<br>(<a href="http://threehao.com/2016/08/22/Github%20Pages%20+%20Hexo/" target="_blank" rel="noopener">http://threehao.com/2016/08/22/Github%20Pages%20+%20Hexo/</a>)<br>(<a href="https://www.v2ex.com/t/264283" target="_blank" rel="noopener">https://www.v2ex.com/t/264283</a>)<br>(<a href="https://zhuanlan.zhihu.com/p/22191919" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/22191919</a>)<br>(<a href="http://www.jianshu.com/p/6c76e668b6ce" target="_blank" rel="noopener">http://www.jianshu.com/p/6c76e668b6ce</a>)<br>(<a href="http://www.jianshu.com/p/35e197cb1273" target="_blank" rel="noopener">http://www.jianshu.com/p/35e197cb1273</a>)<br>(<a href="http://www.jianshu.com/p/5dcb39ba668b" target="_blank" rel="noopener">http://www.jianshu.com/p/5dcb39ba668b</a>)<br>(<a href="http://www.jianshu.com/p/43dca792e3cd" target="_blank" rel="noopener">http://www.jianshu.com/p/43dca792e3cd</a>)<br>(<a href="http://www.jianshu.com/p/465830080ea9" target="_blank" rel="noopener">http://www.jianshu.com/p/465830080ea9</a>)<br>(<a href="http://www.jianshu.com/p/e99ed60390a8" target="_blank" rel="noopener">http://www.jianshu.com/p/e99ed60390a8</a>)<br>(<a href="http://www.jianshu.com/p/05289a4bc8b2" target="_blank" rel="noopener">http://www.jianshu.com/p/05289a4bc8b2</a>)<br>(<a href="https://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html" target="_blank" rel="noopener">https://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html</a>)<br>(<a href="http://www.cnblogs.com/zhcncn/p/4097881.html" target="_blank" rel="noopener">http://www.cnblogs.com/zhcncn/p/4097881.html</a>)<br>(<a href="https://segmentfault.com/a/1190000006831597" target="_blank" rel="noopener">https://segmentfault.com/a/1190000006831597</a>)</p>
+<p>主题汇总：<br>(<a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" rel="noopener">https://github.com/MOxFIVE/hexo-theme-yelee</a>)<br>(<a href="https://github.com/luuman/hexo-theme-spfk" target="_blank" rel="noopener">https://github.com/luuman/hexo-theme-spfk</a>)<br>(<a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank" rel="noopener">https://github.com/yscoder/hexo-theme-indigo</a>)<br>(<a href="https://github.com/hexojs/hexo/wiki/Themes" target="_blank" rel="noopener">https://github.com/hexojs/hexo/wiki/Themes</a>)<br>(<a href="https://github.com/raytaylorlin/hexo-theme-raytaylorism" target="_blank" rel="noopener">https://github.com/raytaylorlin/hexo-theme-raytaylorism</a>)<br>(<a href="https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak" target="_blank" rel="noopener">https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak</a>)<br>(<a href="https://github.com/viosey/hexo-theme-material" target="_blank" rel="noopener">https://github.com/viosey/hexo-theme-material</a>)</p>
+<p>官方主题集：<br>(<a href="https://github.com/hexojs/hexo/wiki/Themes" target="_blank" rel="noopener">https://github.com/hexojs/hexo/wiki/Themes</a>)</p>
+<p>可以参考Hexo的官方文档：<br>(<a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">https://hexo.io/docs/deployment.html</a>)</p>
+<p>&lt;! — 更多 —&gt;</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[我的第一篇中文文章]]></title>
       <url>/2017/12/17/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E4%B8%AD%E6%96%87%E6%96%87%E7%AB%A0/</url>
       <content type="html"><![CDATA[<p>###测试</p>
